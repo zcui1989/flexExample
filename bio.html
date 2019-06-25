@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            text-align: center;
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+
+        .wrapper{
+            display:flex;
+            flex-direction:row;
+            justify-content: space-around;
+            background:#eee;
+            padding: 50px 20px 50px 20px;
+        }
+
+        .col1{
+            width:20%;
+        }
+
+        .col2{
+            width:50%;
+        }
+
+        /* Target class col2 child element p tag */
+        .col2 > p {
+            margin: 40px 0 0 0;
+        }
+
+        .col3{
+            width: 25%;
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        img{
+            border:solid 1px black;
+            width: 100%; /*setting width to 100% of the its parent element ( .wrapper ) */ 
+            height:200px;
+        }
+
+        ul{
+            border-top: solid 2px #000;
+            padding-top:10px;
+            margin-left: 10%;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <h1> My Bio</h1>
+    <div class="wrapper">
+        <div class="col1">
+            <h2>David Bland</h2>
+            <img src="" />
+        </div>
+        <div class="col2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem unde labore dolores id ab accusamus perferendis assumenda laudantium. Odio eligendi excepturi .</p>
+        </div>
+        <div class="col3">
+            <h2>Contact Info</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html> 
